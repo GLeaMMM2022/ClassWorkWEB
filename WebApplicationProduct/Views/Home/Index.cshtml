@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="text-center">
+    <h1 class="display-4">Каталог продуктов</h1>
+    <p><a href="/home/product?ProductName=Лизун">Лизун</a></p>
+    <p><a href="/home/product?ProductName=Ползун">Ползун</a></p>
+    <p><a href="/home/product?ProductName=@ViewBag.Product.Name&Cost=@ViewBag.Product.Cost&Desc=@ViewBag.Product.Description&PathImage=@ViewBag.Product.PathImage">@ViewBag.Product.Name</a></p>
+
+
+</div>
